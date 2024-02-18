@@ -1,0 +1,6 @@
+Spawn Three instances of redis-cli for this demonstration.
+First two would be subscribers to a channel and the last one would be the publisher.
+Make sure the channel names are consistent eg `gobe-mq` so that messages are reliably sent across and received. 
+
+We subscribe to channels with the syntax: `subscribe channel_name ..`
+we Publish to channels with the syntax: `publish channel_name message ..`
